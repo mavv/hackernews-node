@@ -7,8 +7,6 @@ const Mutation = require('./resolvers/Mutation');
 const User = require('./resolvers/User');
 const Link = require('./resolvers/Link');
 
-//1st token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjazFnY2xweTdubXJ2MGIxNzViMmRud2w2IiwiaWF0IjoxNTcwNDQ4NjkxfQ._qt2_XW0H3BeKguXQvQ2WxYJHiCAnGH9Zhsn9Z2iXZg
-
 const resolvers = {
   Query,
   Mutation,
