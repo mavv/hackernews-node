@@ -54,6 +54,30 @@ const post = (parent, args, context, info) => {
   });
 };
 
+//   // TODO: update resolver to use prisma
+//   updateLink: (parent, args) => {
+//     const linkToRemove = _.find(links, { id: args.id });
+//     const indexOfLink = _.indexOf(links, linkToRemove);
+//     const linkKeys = _.keys(_.omit(linkToRemove, ['id']));
+
+//     _.each(linkKeys, k => {
+//       if (k in args) {
+//         links[indexOfLink][k] = args[k];
+//       }
+//     });
+
+//     return links[indexOfLink];
+//   },
+//   // TODO: update resolver to use prisma
+//   deleteLink: (parent, args) => {
+//     const linkToRemove = _.find(links, { id: args.id });
+//     const indexOfLink = _.indexOf(links, linkToRemove);
+
+//     links.splice(indexOfLink, 1);
+
+//     return linkToRemove;
+//   },
+
 module.exports = {
   signup,
   login,
